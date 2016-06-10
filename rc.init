@@ -1,0 +1,17 @@
+#!/bin/rc
+
+flag v +
+
+path=/bin
+
+umask 022
+
+mkdir /dev/pts
+mkdir /dev/shm
+
+mount -o remount,rw /
+mount -a
+
+/etc/rc.local
+
+exec perpboot /etc/perp

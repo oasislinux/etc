@@ -1,0 +1,9 @@
+#!/bin/rc
+
+hostname oasis &
+{
+	ip link set lo up
+	# add other networking stuff here
+} &
+
+wait

@@ -1,0 +1,15 @@
+#!/bin/rc
+
+path=/bin
+
+killall5
+sleep 1
+killall5 -s KILL
+sleep 1
+
+switch($1) {
+case poweroff
+	exec halt -p
+case reboot
+	exec halt -r
+}
