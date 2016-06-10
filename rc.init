@@ -9,6 +9,7 @@ umask 022
 mkdir /dev/pts
 mkdir /dev/shm
 
+mount -t proc none /proc
 mount -o remount,rw /
 mount -a
 
