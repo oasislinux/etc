@@ -1,7 +1,5 @@
 #!/bin/rc
 
-flag v +
-
 path=/bin
 
 umask 022
