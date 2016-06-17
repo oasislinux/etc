@@ -1,3 +1,5 @@
+umask 022
+
 export PATH=/bin
 export MANPATH=/share/man
 export PAGER=cat
