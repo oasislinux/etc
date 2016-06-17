@@ -1,2 +1,0 @@
-#!/bin/rc
-exec runpause 0 /bin/true

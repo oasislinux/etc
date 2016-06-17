@@ -2,4 +2,5 @@ root:x:0:root
 adm:x:4:root
 tty:x:5:
 disk:x:6:
+log:x:10:
 sshd:x:22:
