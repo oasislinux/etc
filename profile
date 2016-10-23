@@ -2,6 +2,7 @@ umask 022
 
 export PATH=/bin
 export MANPATH=/share/man
+export PERP_BASE=/etc/perp
 export PAGER=cat
 export EDITOR='sam -d'
 export PS1='\$ '
