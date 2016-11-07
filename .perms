@@ -1,7 +1,2 @@
-041755 perp/getty@tty1
-041755 perp/getty@tty2
-041755 perp/getty@tty3
-041755 perp/getty@tty4
-041755 perp/getty@tty5
-041755 perp/getty@tty6
+041755 perp/getty@hvc0
 100600 shadow
