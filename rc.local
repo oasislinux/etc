@@ -3,9 +3,7 @@
 sysctl -p /etc/sysctl.conf
 
 hostname oasis &
-{
-	ip link set lo up
-	# add other networking stuff here
-} &
+ip link set lo up &
+ip link set eth0 up &
 
 wait
