@@ -4,3 +4,6 @@ none /proc proc nodev,noexec,nosuid,relatime 0 0
 none /run tmpfs nodev,noexec,nosuid,mode=755 0 0
 none /sys sysfs nodev,noexec,nosuid,relatime 0 0
 none /tmp tmpfs nodev,nosuid,relatime 0 0
+
+/dev/sda1 /boot ext2 noauto 0 2
+/dev/sda2 / ext4 relatime 0 1
