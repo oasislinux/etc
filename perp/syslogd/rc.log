@@ -1,0 +1,10 @@
+#!/bin/rc -e
+if(! ~ $1 start) exit
+
+dir=/var/log/sys
+if(! [ -d $dir ]) {
+	mkdir $dir
+	chown log:log $dir
+}
+
+exec runuid log tinylog -k 8 -s 33554432 -z $dir
