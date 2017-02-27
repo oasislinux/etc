@@ -10,4 +10,4 @@ case reboot
 	args=-r
 }
 
-exec /libexec/oasis/shutdown $args
+exec /libexec/shutdown $args
