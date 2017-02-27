@@ -5,4 +5,5 @@
 041755 perp/getty@tty4
 041755 perp/getty@tty5
 041755 perp/getty@tty6
+041755 perp/syslogd
 100600 shadow
