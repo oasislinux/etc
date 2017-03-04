@@ -1,5 +1,6 @@
 umask 022
 
+export ENV=/etc/kshrc
 export PATH=/bin
 export MANPATH=/share/man
 export PERP_BASE=/etc/perp
