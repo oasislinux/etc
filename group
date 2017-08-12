@@ -6,3 +6,4 @@ audio:x:4:
 video:x:5:
 log:x:100:
 sshd:x:101:
+ntpd:x:102:
