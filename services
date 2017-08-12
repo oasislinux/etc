@@ -1,0 +1,3 @@
+# service	port/protocol
+ntp		123/tcp
+ntp		123/udp
