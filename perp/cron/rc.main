@@ -1,3 +1,3 @@
 #!/bin/rc
 if(! ~ $1 start) exit
-exec crond >[2=1]
+exec cron >[2=1]
