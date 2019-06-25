@@ -5,5 +5,14 @@ sysctl -p /etc/sysctl.conf
 hostname oasis &
 ip link set lo up &
 ip link set eth0 up &
+chmod 666 /dev/fuse &
+if([ -d /dev/dri ]) {
+	chmod 660 /dev/dri/*
+	chown root:video /dev/dri/*
+} &
+if([ -d /dev/snd ]) {
+	chmod 660 /dev/snd/*
+	chown root:audio /dev/snd/*
+} &
 
 wait

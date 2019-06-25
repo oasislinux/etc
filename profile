@@ -1,9 +1,11 @@
 umask 022
 
+export ENV=/etc/kshrc
 export PATH=/bin
 export MANPATH=/share/man
-export PAGER=less
-export EDITOR=vis
+export PERP_BASE=/etc/perp
+export PAGER=cat
+export EDITOR='sam -d'
 export PS1='\$ '
 export XDG_RUNTIME_DIR=/tmp
 

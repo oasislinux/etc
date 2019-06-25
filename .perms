@@ -1,3 +1,5 @@
+100400 doas.conf
 041755 perp/getty@hvc0
 041755 perp/sdhcp@eth0
+041755 perp/syslogd
 100600 shadow
