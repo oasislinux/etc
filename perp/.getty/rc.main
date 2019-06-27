@@ -1,3 +1,5 @@
 #!/bin/rc
 if(! ~ $1 start) exit
-exec getty /dev/`{echo $2 | cut -d @ -f 2}
+dev=/dev/`{echo $2 | cut -d @ -f 2}
+cat /etc/issue >$dev >[2]/dev/null
+exec getty $dev
