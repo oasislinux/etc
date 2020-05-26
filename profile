@@ -5,7 +5,7 @@ export PATH=/bin
 export MANPATH=/share/man
 export PERP_BASE=/etc/perp
 export PAGER=cat
-export EDITOR='sam -d'
+export EDITOR=ed
 export PS1='\$ '
 export XDG_RUNTIME_DIR=/tmp
 

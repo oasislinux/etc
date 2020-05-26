@@ -1,0 +1,27 @@
+#!/bin/rc
+
+flag e +
+
+if(! ~ $ACTION add) exit
+
+fn chownmod {
+	chown $1 $3
+	chmod $2 $3
+}
+
+switch($DEVNAME) {
+case dri/*
+	chownmod :video 660 /dev/$DEVNAME
+case snd/*
+	chownmod :audio 660 /dev/$DEVNAME
+case fuse
+	chmod 666 /dev/$DEVNAME
+}
+
+switch($SUBSYSTEM) {
+case hidraw
+	switch(`{awk -F '=' '$1 == "HID_ID" {print $2}' /sys/$DEVPATH/device/uevent}) {
+	case *:00001050:00000115 # Yubico Yubikey NEO U2F+CCID
+		chownmod :sk 660 /dev/$DEVNAME
+	}
+}
