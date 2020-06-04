@@ -1,5 +1,5 @@
 root:x:0:root
-admin:x:1:root
+admin:x:1:root,admin
 tty:x:2:
 disk:x:3:
 audio:x:4:
