@@ -8,3 +8,4 @@ sk:x:6:
 log:x:100:
 sshd:x:101:
 ntpd:x:102:
+oasis:x:1000:
