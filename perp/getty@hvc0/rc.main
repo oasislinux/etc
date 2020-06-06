@@ -1,5 +1,9 @@
 #!/bin/rc
 if(! ~ $1 start) exit
 dev=/dev/`{echo $2 | cut -d @ -f 2}
+if(! runtool -F 0<$dev test -t 0) {
+	perpctl d $2
+	exit 1
+}
 cat /etc/issue >$dev >[2]/dev/null
 exec getty $dev $TERM
