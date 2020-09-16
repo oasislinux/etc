@@ -12,6 +12,8 @@ fn chownmod {
 switch($DEVNAME) {
 case dri/*
 	chownmod :video 660 /dev/$DEVNAME
+case input/*
+	chownmod :input 660 /dev/$DEVNAME
 case snd/*
 	chownmod :audio 660 /dev/$DEVNAME
 case fuse
