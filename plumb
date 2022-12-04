@@ -1,0 +1,18 @@
+#!/bin/rc
+
+fn match {
+	printf %s\n $1 | grep -qE $2
+}
+
+if(match $1 '^(https?://)?(www\.)?(youtube.com/watch\?|youtu\.be/)')
+	exec mpv $*
+switch($1) {
+case *.mp3 *.wav *.flac
+	exec st mpv $*
+case *.mp4 *.mkv *.webm
+	exec mpv $*
+case *.pdf
+	exec mupdf $*
+case http://* https://*
+	exec netsurf $*
+}
